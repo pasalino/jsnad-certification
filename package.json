@@ -1,0 +1,15 @@
+{
+  "name": "pasalino-jsnad-certification",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "eslint": "^8.41.0"
+  },
+  "dependencies": {
+    "csvtojson": "^2.0.10"
+  }
+}
