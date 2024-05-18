@@ -148,7 +148,7 @@
 - [Jest getting started](https://jestjs.io/docs/getting-started)
 - [Mocha](https://mochajs.org/)
 
-## Exercise
+## Exercises
 
 - [Stream-Adventure](https://github.com/workshopper/stream-adventure)
 - [NODE School](https://nodeschool.io/)
