@@ -1,4 +1,4 @@
-# Leaning for JSNAD certification
+# Learning for JSNAD certification
 
 ## 0. Common
 
