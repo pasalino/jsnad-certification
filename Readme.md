@@ -34,4 +34,4 @@ Each folder contains examples of uses and applications of different apis and met
 
 ## 🚀 Experiece
 
-[Here my tips and journey to reach the certification](https://github.com/pasalino/jsnad-certification/blob/main/Learning.md)
+[Here my tips and journey to reach the certification](https://medium.com/@pasalino/my-journey-to-becoming-a-node-js-certified-developer-jsnad-5a0d39228e88)
