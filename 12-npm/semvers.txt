@@ -1,0 +1,26 @@
+Include everything that does not increment the first non-zero portion of semver
+Use the caret (aka hat) symbol, ^
+
+Lodash 
+
+^2.2.1  ->  2.2.1 2.3.0 2.4.0 2.4.1 2.4.2
+^0.1.0  ->  0.1.0
+^0.0.3  ->  nothing
+
+
+Include everything greater than a particular version in the same minor range
+Use the tilde symbol, ~
+
+~2.2.1  -> 2.2.1
+
+Specify a range of stable versions
+Use >, <, =, >= or <= for comparisons, or - to specify an inclusive range
+
+>2.1 -> all version greater than 2.1
+1.0.0 - 1.2.0 -> range between
+
+
+Include multiple sets of versions
+Use || to combine
+
+^2 <2.2 || > 2.3 -> all two version 2.0 to 2.1.x and greater than 2.3.x

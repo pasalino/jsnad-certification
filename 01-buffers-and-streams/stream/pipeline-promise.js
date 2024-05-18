@@ -1,35 +1,36 @@
-const { pipeline } = require("stream/promises");
-const path = require("path");
-const { createReadStream, createWriteStream } = require("fs");
-const { Transform } = require("stream");
+const { pipeline } = require('stream/promises');
+const path = require('path');
+const { createReadStream, createWriteStream } = require('fs');
+const { Transform } = require('stream');
 
 const createUppercaseStream = () => {
   return new Transform({
     transform(chunk, enc, next) {
       const upperCased = chunk.toUpperCase();
-      console.log("upperCased", upperCased);
-
-      if (upperCased.includes("SITH")) {
-        return next(new Error("Sith are here!", null));
+      console.log('upperCased', upperCased);
+      if (upperCased.includes('SITH')) {
+        return next(new Error('Sith are here!', null));
       }
       next(null, upperCased);
     },
     decodeStrings: false,
-    encoding: "utf8",
+    encoding: 'utf8',
   });
 };
 
 pipeline(
-  createReadStream(path.join(__dirname, "../../resources/lowercase.txt"), {
-    encoding: "utf8",
+  createReadStream(path.join(__dirname, '../../resources/lowercase.txt'), {
+    encoding: 'utf8',
     highWaterMark: 100,
   }),
   createUppercaseStream(),
-  createWriteStream(path.join(__dirname, "../../output/uppercase.txt"))
-).then((err) => {
-  if (err) {
+  createWriteStream(path.join(__dirname, '../../output/uppercase.txt'))
+)
+  .then(() => {
+    console.log('finished writing');
+  })
+  .catch((err) => {
+    console.log('ERROR');
     console.error(err);
     return;
-  }
-  console.log("finished writing");
-});
+  });

@@ -27,8 +27,8 @@ csvReadStream.on("data", (chunk) => {
   console.log("Data dataRead:", csvReadStream.bytesRead, chunk);
 
   // To slow-down the stream speed it working without readable event
-  // csvReadStream.pause();
-  // setTimeout(() => csvReadStream.resume(), 500);
+  csvReadStream.pause();
+  setTimeout(() => csvReadStream.resume(), 500);
 });
 
 csvReadStream.on("error", (err) => {

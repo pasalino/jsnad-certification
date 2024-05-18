@@ -5,9 +5,13 @@ const data = [];
 const createWriteStream = (data) => {
   return new Writable({
     objectMode: false,
-    objectMode: false,
+    defaultEncoding: "utf-8",
+
     write(chunk, enc, next) {
-      console.log("Write");
+      if (chunk.toString() === "ERROR") {
+        return next("Generate error");
+      }
+      console.log("Write data:", chunk.toString());
       data.push(chunk);
       next();
     },
@@ -33,6 +37,7 @@ ws.write("Hello\n");
 ws.write("Node.js\n");
 ws.write("from\n");
 ws.write("weBeetle\n");
-ws.write(1);
+
+// ws.write("ERROR");
 
 ws.end("Nothing more to write!");

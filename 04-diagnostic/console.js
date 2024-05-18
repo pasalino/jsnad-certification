@@ -8,6 +8,7 @@ console.log("hello %s", "world");
 console.warn("Warning message");
 console.error(new Error("Whoops, something bad happened"));
 
+debugger;
 // ---- Use class Console with custom stream
 const out = fs.createWriteStream(
   path.join(__dirname, "../output/console_std.txt"),

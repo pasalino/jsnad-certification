@@ -1,7 +1,6 @@
 const { createGzip } = require("zlib");
 const { Transform, pipeline, PassThrough } = require("node:stream");
 
-const gzipTransform = createGzip();
 const deferTransform = new Transform({
   transform: (chunk, encoding, next) => {
     Promise.resolve(`${chunk.toString().toUpperCase()} `).then((data) =>
