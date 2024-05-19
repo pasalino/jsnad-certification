@@ -34,7 +34,7 @@ Each folder contains examples of uses and applications of different apis and met
 
 [Articles to read in order to prepare for certification's exam](https://github.com/pasalino/jsnad-certification/blob/main/Learning.md)
 
-[Exercies](https://github.com/pasalino/jsnad-certification/blob/main/Learning.md#exercises)
+[Exercises](https://github.com/pasalino/jsnad-certification/blob/main/Learning.md#exercises)
 
 ## 🚀 Experiece
 
