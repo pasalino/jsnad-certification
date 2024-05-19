@@ -26,12 +26,16 @@ There are 13 folder correspondent to the 13 areas of exam:
 12. Package.json
 13. Unit Testing
 
-Each folder contains examples of uses and applications of different apis and methodologies of node.
+Each folder contains examples of uses and applications of different apis and methodologies of NodeJS.
 
 ## 🌍 List of articles
 
+[Course about JSNAD Exam](https://courses.dwf.dev/docs/javascript/jsnad-course-notes)
+
 [Articles to read in order to prepare for certification's exam](https://github.com/pasalino/jsnad-certification/blob/main/Learning.md)
+
+[Exercies](https://github.com/pasalino/jsnad-certification/blob/main/Learning.md#exercises)
 
 ## 🚀 Experiece
 
-[Here my tips and journey to reach the certification](https://medium.com/@pasalino/my-journey-to-becoming-a-node-js-certified-developer-jsnad-5a0d39228e88)
+[Here are my tips and journey to reach the certification](https://medium.com/@pasalino/my-journey-to-becoming-a-node-js-certified-developer-jsnad-5a0d39228e88)
